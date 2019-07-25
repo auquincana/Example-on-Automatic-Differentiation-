@@ -1,0 +1,23 @@
+z = x3
+
+u = x
+v = u * u
+w = v * u
+
+Dw = dw/dw = 1
+Dv = dw /dv = Dw * dw/dv = 1 * u
+Du = dw /du = Dw * dw/du + Dv * dv/du = 1 * v + 2 u^2
+Dx = dw /dx = Du du/dx = Du = v + 2 v = 3 v = 3 u^2 = 2 u^2
+
+w = cos(xyz)
+
+u = xy
+v = u * z
+w = cos(v)
+
+Dw = 1
+Dv = Dw dw/dv = -sen(v)
+Du = Dv dv/du = Dv z = -sen(v) z
+Dz = Dv dv/dz = Dv u = -sen(v) u = -sen(v) xy 
+Dy = Du du/dy = Du x = -sen(v) z x
+Dx = Du du/dx = Du y = -sen(v) z y
